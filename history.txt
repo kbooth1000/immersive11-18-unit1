@@ -1,0 +1,8 @@
+    1  ls
+    2  cd Development
+    3  ls
+    4  cd 11-18-immersive
+    5  cd unit1
+    6  ls
+    7  rm test.txt
+    8  git init
