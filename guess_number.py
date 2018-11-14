@@ -2,13 +2,15 @@
 # print 'Hi ' + name
 # print type(name)
 
-
+secret_number = 5
 secret_guessed = False
 while(secret_guessed == False):
-    secret_number = raw_input('Guess my number: ')
-    if(secret_number == "5"):
-        print('Yep, it is 5')
+    users_guess = int(raw_input('Guess my number: '))
+    if(users_guess == secret_number):
+        print('Yep, it is %s' % secret_number)
         secret_guessed = True
     else:
-        print(secret_number)
-        print('Nope, not ' + secret_number)
+        if users_guess < secret_number:
+            print('Nope,  %s is too low.') % str(users_guess)
+        else:
+            print('Sorry, %s is too high.') % str(users_guess)
